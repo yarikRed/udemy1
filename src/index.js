@@ -7,12 +7,30 @@ const App = function() {
     
     return (
         <div className="ui container comments">
-            <CommentDetail author={faker.name.firstName()} timeAgo={faker.date.past()}/>
-            <CommentDetail author={faker.name.firstName()} timeAgo={faker.date.past()}/>
-            <CommentDetail author={faker.name.firstName()} timeAgo={faker.date.past()}/>
-            <CommentDetail author={faker.name.firstName()} timeAgo={faker.date.past()}/>
-            <CommentDetail author={faker.name.firstName()} timeAgo={faker.date.past()}/>
-            <CommentDetail author={faker.name.firstName()} timeAgo={faker.date.past()}/>
+            <CommentDetail 
+                author={faker.name.firstName()} 
+                timeAgo='Today'
+                avatar={faker.image.avatar()}
+                text={faker.random.words()}
+            />
+            <CommentDetail 
+                author={faker.name.firstName()} 
+                timeAgo='Today'
+                avatar={faker.image.avatar()}
+                text={faker.random.words()}
+            />
+            <CommentDetail 
+                author={faker.name.firstName()} 
+                timeAgo='Today'
+                avatar={faker.image.avatar()}
+                text={faker.random.words()}
+            />
+            <CommentDetail 
+                author={faker.name.firstName()} 
+                timeAgo='Today'
+                avatar={faker.image.avatar()}
+                text={faker.random.words()}
+            />
         </div>
     );
 };
